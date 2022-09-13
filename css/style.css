@@ -13,7 +13,6 @@
 Default: 1
 
 
-
 02 COLORS
 - Primary: #e67e22
 - Tints:
@@ -59,4 +58,23 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #555; /*here the 555 represents 55 55 55, since 2 digits are same you can just write 1 for each pair.*/
+}
+
+/* --------HERO SECTION------ */
+
+.hero {
+  /* setting max-width for responsive design */
+  max-width: 130rem;
+
+  /* setting all content to centre, 0 is for top and bottom, auto keeps all content in middle */
+  margin: 0 auto;
+
+  /* setting display to grid then 2 columns with equal width. */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+  /* fills the whole parent section */
+  width: 100%;
 }
