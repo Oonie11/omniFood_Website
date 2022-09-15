@@ -39,6 +39,7 @@ Letter  Spacing:
 
 --06 BORDER-RADIUS
   default- 9px
+  medium- 11px
 
 --07 WHITE-SPACE
 
@@ -75,6 +76,10 @@ body {
   color: #555; /*here the 555 represents 55 55 55, since 2 digits are same you can just write 1 for each pair.*/
 }
 
+strong {
+  font-weight: 500;
+}
+
 /* ************************************************* */
 /* --------GENREAL REUSABLE SECTION------ */
 /* ************************************************* */
@@ -99,7 +104,7 @@ body {
 
 /* custom grid template for 3 columns */
 .grid--3cols {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* custom grid template for 4 columns */
