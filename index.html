@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- **************** HEAD-SECTION ************ -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,6 +16,8 @@
 
     <title>Omni-Food</title>
   </head>
+
+  <!-- **************** BODY-SECTION ************ -->
   <body>
     <!-- **************** NAV-BAR-SECTION ************ -->
     <header class="header">
@@ -30,6 +33,8 @@
       </nav>
     </header>
     <!-- adding main element, to contain non repeating elements. unlike nav bar and footer -->
+    <!-- **************** MAIN-SECTION ************ -->
+
     <main>
       <!-- **************** HERO-SECTION ************ -->
       <section class="section-hero">
@@ -175,13 +180,13 @@
       </section>
       <!-- **************** MEALS SECTION ************ -->
       <section class="section-meals">
-        <div class="container">
+        <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
             Omnifood AI chooses from 5,000+ recipes
           </h2>
         </div>
-        <div class="container grid grid--3cols">
+        <div class="container grid grid--3cols margin-bottom-md">
           <!-- **************** MEAL-01 SECTION ************ -->
           <div class="meal">
             <img
@@ -193,7 +198,6 @@
               <div class="meal-tags">
                 <span class="tag tag--vegetarian">Vegetarian</span>
               </div>
-
               <p class="meal-title">Japanese Gyozas</p>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
@@ -226,7 +230,6 @@
                 <span class="tag tag--vegan">Vegan </span>
                 <span class="tag tag--paleo">Paleo </span>
               </div>
-
               <p class="meal-title">Avocado Salad</p>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
@@ -247,8 +250,51 @@
               </ul>
             </div>
           </div>
-
-          <div class="list">List of diets</div>
+          <!-- **************** list of Diet SCRIPTS ************ -->
+          <div class="diets">
+            <h3 class="heading-tertiary">works with any diet:</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Vegetarian</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Vegan</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Pescatarian</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Gluten-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Lactose-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Keto</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Paleo</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Low FODMAP</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Kid-friendly</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container all-recipes">
+          <a href="#" class="link">See all recipes &rarr;</a>
         </div>
       </section>
     </main>
