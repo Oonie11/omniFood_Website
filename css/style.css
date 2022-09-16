@@ -330,18 +330,24 @@
 /* --------TESTIMONIALS SECTION------ */
 /* ************************************************* */
 
-.testimonial-container {
-  padding: 3.4rem;
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  /* adding value in fr , In terms of percentage instead of single digit integer. */
+  grid-template-columns: 55fr 45fr;
+  /* this solvers issue of images creating horizontal gaps when scaling the browser-window */
+  align-items: center;
 }
 
-.section-testimonials {
-  padding: 9.6rem 0;
+.testimonial-container {
+  padding: 9.6rem;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 
 .testimonial-img {
@@ -358,5 +364,31 @@
 
 .testimonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
+}
+
+/* ************************************************* */
+/* --------GALLERY SECTION------ */
+/* ************************************************* */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  /* using the overflow property to avoid img from crossing its margin during scale */
+  overflow: hidden;
+}
+
+.gallery-item img {
+  /* img is inline-block by default resulting in white-spaces around it. converting it to block-element will solve this issue. */
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
