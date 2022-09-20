@@ -560,7 +560,50 @@
       <section class="section-cta">
         <div class="container">
           <div class="cta">
-            <div class="cta-text-box">cta</div>
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first meal for free</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <!-- action attribute get the address where the data is needed to be reveived -->
+              <form action="#" class="cta-form">
+                <!-- the elements below themself are inline-elements so we wrap them within div to make them block-element-->
+                <div>
+                  <!-- use for attr for label and id attr for input to link them -->
+                  <label for="full-name">Full Name</label>
+                  <!-- required attr used to avoid empty data. -->
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Jhon Wick"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="abc@email.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear about us?</label>
+                  <select id="select-where" required>
+                    <option value="">Select One:</option>
+                    <option value="friends">Friends and Family</option>
+                    <option value="youtube">YouTube Video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                <button class="btn">Sign up now</button>
+              </form>
+            </div>
 
             <!--since the div is empty class and the image is added through css,
               the container will not be visible to the screen readers and thus needs to be fixed. 
