@@ -73,6 +73,9 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* MAY NOT WORK IN SAFARI AND EDGE */
+  /* scroll-behavior: smooth; */
 }
 
 /* default styles for the website */
