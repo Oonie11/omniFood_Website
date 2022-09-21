@@ -12,6 +12,8 @@
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 // make mobile navigation work
 
@@ -23,7 +25,10 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
+
 ///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
 // smooth scrolling animation
 
 //selecting all the a elements with links (href)
@@ -57,6 +62,34 @@ allLinks.forEach((link) => {
   });
 });
 
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+// STICKY NAVIGATION
+
+//selecting the hero-section
+const sectionHeroEl = document.querySelector(".section-hero");
+
+//to observe when leaving the view from viewport
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    //In the view-port
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
+
+///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
