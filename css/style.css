@@ -6,6 +6,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+  /* for absolute positioning of mobile nav */
+  position: relative;
 
   /* fixed height to create a sticky nav-bar */
   height: 9.6rem;
@@ -53,6 +55,27 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/* MOBILE NAV */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: none;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+/* SELECTION based on ATTRIBUTE of the element*/
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* ************************************************* */
